@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USDZ Demo</title>
+    <!-- Web Component для просмотра 3D‑моделей -->
+    <script type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
+    <style>
+      /* Растянуть viewport на всю высоту экрана */
+      model-viewer {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+      }
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <model-viewer
+      src="lab6xr1.usdz"
+      ios-src="lab6xr1.usdz"
+      alt="3D модель lab6xr1.usdz"
+      ar
+      ar-modes="quick-look"
+      camera-controls
+      environment-image="neutral"
+    ></model-viewer>
+  </body>
+</html>
